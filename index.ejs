@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>My static index page!</title>
+      <link href="/styles.css" rel="stylesheet" type="text/css">
+  </head>
+    <body>  
+        
+        <p>
+            <select id="firstFilter"  name="firstFilter">
+                <option value = "no filter">-- No Filter --</option>
+                <option value = "Country"> Country </option>
+                <option value = "City"> City </option>
+                <option value = "Cuisine"> Cuisine </option>
+            </select>
+        
+        
+        
+            <select id="secondFilter" name="secondFilter">
+                <option value=""> -- No Filter -- </option>
+            </select>
+        
+        <input type="submit" id = "send" value="Apply Filter">
+        <input type=button id = "clearFilter" value='Clear Filter'>
+         
+    </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Country</th>
+                    <th>City</th>
+                    <th>Cuisine</th>
+                </tr>
+            </thead>
+            <tbody>      </tbody>
+        </table>
+    </p>
+        <p>
+            <span class="previousButton">
+                <button id="previous">&laquo; Previous</button>
+            </span>
+
+            
+            
+            <span class="nextButton">
+                <button id="next">Next &raquo;</button>
+            </span>
+
+            <span class ="dataCount"> <p id = "dataCount"></p></span>
+        </p>
+        
+        <span>
+            <label>Per page: </label>
+            <select id="perPage">
+                
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+            </select>
+        </span>
+        
+    </body>
+    <script type="text/javascript" src ="./script.js"> </script>
+</html>
